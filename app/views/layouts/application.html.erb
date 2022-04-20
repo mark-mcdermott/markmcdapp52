@@ -11,6 +11,14 @@
   </head>
 
   <body>
-    <%= yield %>
+    <main>
+      <div class="container py-4">
+        <%= render 'layouts/header' %>
+        <%= yield %>
+        <%= render 'layouts/footer' %>
+      </div>
+    </main>
   </body>
 </html>
+
+
